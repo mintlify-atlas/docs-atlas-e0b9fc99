@@ -1,0 +1,148 @@
+{
+  "projectType": "saas",
+  "projectName": "B-Accesible",
+  "projectDescription": "An accessible inclusive digital banking platform with adaptive AI that helps users with low digital literacy, visual disabilities, and cognitive needs perform financial operations through voice guidance, easy language, and adaptive UI.",
+  "theme": "almond",
+  "primaryColor": "#23aae2",
+  "lightColor": "#72c6eb",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/accessibility",
+              "features/ai-nudging",
+              "features/transactions",
+              "features/open-finance"
+            ]
+          },
+          {
+            "group": "Ethics & Compliance",
+            "pages": [
+              "ethics/principles",
+              "ethics/privacy",
+              "ethics/accessibility-standards"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/register",
+              "api/auth/login",
+              "api/auth/profile",
+              "api/auth/accessibility-profile",
+              "api/auth/consent"
+            ]
+          },
+          {
+            "group": "Ledger Service",
+            "pages": [
+              "api/ledger/accounts",
+              "api/ledger/beneficiaries",
+              "api/ledger/transactions"
+            ]
+          },
+          {
+            "group": "Open Finance",
+            "pages": [
+              "api/openfinance/connections",
+              "api/openfinance/products",
+              "api/openfinance/sync"
+            ]
+          },
+          {
+            "group": "AI Service",
+            "pages": [
+              "api/ai/overview",
+              "api/ai/nudge",
+              "api/ai/accessibility",
+              "api/ai/risk"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "api/analytics/events"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "development/local-setup",
+              "development/database",
+              "development/docker"
+            ]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "development/backend-services",
+              "development/ai-service",
+              "development/frontend",
+              "development/api-gateway"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Adaptive AI-powered accessibility profiling (large text, high contrast, voice-assisted modes)",
+    "Ethical nudging system that detects user difficulty and offers contextual help",
+    "AI-based transaction risk assessment and fraud prevention",
+    "SPEI-compatible money transfers and beneficiary management",
+    "Open Finance integration for connecting external bank accounts",
+    "Ocelot API Gateway routing all microservices through a single entry point",
+    "WCAG 2.1 AA compliant UI with voice feedback and screen reader support",
+    "Microservices architecture: AuthService, LedgerService, OpenFinanceService, AnalyticsService, AI Service"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/register",
+    "POST /api/auth/login",
+    "GET /api/profile/me",
+    "PUT /api/profile/me",
+    "GET /api/profile/accessibility",
+    "PUT /api/profile/accessibility",
+    "GET /api/profile/consent",
+    "PUT /api/profile/consent",
+    "GET /api/ledger/accounts",
+    "POST /api/ledger/accounts",
+    "GET /api/ledger/beneficiaries",
+    "POST /api/ledger/beneficiaries",
+    "DELETE /api/ledger/beneficiaries/{id}",
+    "GET /api/ledger/transactions",
+    "POST /api/ledger/transactions",
+    "GET /api/openfinance/connections",
+    "POST /api/openfinance/connections",
+    "DELETE /api/openfinance/connections/{id}",
+    "GET /api/openfinance/products",
+    "POST /api/openfinance/sync/{connectionId}",
+    "POST /ai/nudge",
+    "POST /ai/accessibility",
+    "POST /ai/risk",
+    "GET /ai/health",
+    "POST /api/analytics/events"
+  ]
+}
